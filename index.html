@@ -15,8 +15,8 @@
   </head>
   <body>
     <section>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
+      <nav class="navbar navbar-expand-lg" ">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
               src="./images/logo1-removebg-preview.png"
@@ -26,18 +26,30 @@
               class="d-inline-block align-text-top"
             />
           </a>
-
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item">
-              <a href="#" class="nav-link signin">Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link active" style="color: #0452b7"
-                >Register</a
-              >
-            </li>
-          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link signin">Sign in</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active" style="color: #0452b7"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </section>
@@ -89,9 +101,11 @@
             <img src="./images/pot-removebg-preview.png" alt="" class="pot" />
           </div>
         </div>
+
+        <!-- form -->
         <div class="form">
           <form class="grid-form">
-            <div>
+            <div class="input">
               <label class="label" for="id">Refferral ID</label>
               <input
                 type="text"
@@ -100,7 +114,7 @@
                 placeholder="Enter Refferral ID"
               />
             </div>
-            <div>
+            <div class="input">
               <label class="label" for="fname">First Name</label>
               <input
                 type="text"
@@ -109,7 +123,7 @@
                 placeholder="Enter First Name"
               />
             </div>
-            <div>
+            <div class="input">
               <label class="label" for="lname">Last Name</label>
               <input
                 type="text"
@@ -118,7 +132,7 @@
                 placeholder="Enter Last Name"
               />
             </div>
-            <div>
+            <div class="input">
               <label class="label" for="email">Email</label>
               <input
                 type="email"
@@ -127,7 +141,7 @@
                 placeholder="Enter Email"
               />
             </div>
-            <div>
+            <div class="input">
               <label class="label" for="password">Password</label>
               <input
                 type="password"
@@ -136,7 +150,7 @@
                 placeholder="Enter Password"
               />
             </div>
-            <div>
+            <div class="input">
               <label class="label" for="country">Country</label>
               <!-- <input
                 type="text"
@@ -436,7 +450,7 @@
                 <option value="Zimbabwe">Zimbabwe</option>
               </select>
             </div>
-            <div>
+            <div class="input">
               <label class="label" for="tel">Mobile Number</label>
               <input
                 type="tel"
@@ -445,7 +459,7 @@
                 placeholder="Enter Mobile Number"
               />
             </div>
-            <div>
+            <div class="input">
               <label class="label" for="dob">Birth Date</label>
               <input
                 type="date"
